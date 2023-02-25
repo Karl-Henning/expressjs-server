@@ -1,0 +1,11 @@
+# OS X
+._*
+.DS_Store
+Thumbs.db
+
+# yarn
+node_modules
+yarn.lock
+*.log
+*.gz
+/build
