@@ -2,6 +2,8 @@ import express from "express";
 
 const app = express();
 
+const port = 8080;
+
 const getYear = (date: Date): string => {
   return `${date.getFullYear()}`;
 };
@@ -11,7 +13,7 @@ app.get("/", (req, res) => {
   res.send(`Hello World ! ${year}`);
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   // tslint:disable-next-line: no-console
-  console.log("App listening on port 3000!");
+  console.log(`App listening on port ${port}!`);
 });
